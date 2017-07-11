@@ -61,6 +61,7 @@ connection.query('SELECT * from students1', function(err, rows, fields) {
 app.use('/node_modules',  express.static(__dirname + '/node_modules'));
 
 app.use('/css',  express.static(__dirname + '/css'));
+app.use('/img',  express.static(__dirname + '/img'));
 
 app.use('/js',  express.static(__dirname + '/js'));
 
@@ -73,10 +74,10 @@ sess.username;
 
 if(sess.username)  
     {  
-        res.sendFile('home.html',{'root': __dirname + '/temp'});
+        res.sendFile('icon.html',{'root': __dirname });
     }  
     else{  
-    res.sendFile('login.html',{'root': __dirname + '/temp'}); 
+    res.sendFile('login.html',{'root': __dirname  }); 
     }  
 
   console.log(req.body);
@@ -86,7 +87,7 @@ if(sess.username)
 
 
 app.get('/showSignInPage',function(req,res){
-    res.sendFile('login.html',{'root': __dirname + '/temp'});
+    res.sendFile('login.html',{'root': __dirname });
 });
 
 
@@ -94,13 +95,13 @@ app.get('/showSignInPage',function(req,res){
 
 
 app.get('/showSignupPage',function(req,res){
-    res.sendFile('sign_up.html',{'root': __dirname + '/temp'});
+    res.sendFile('sign_up.html',{'root': __dirname });
 });
 
 
 
 app.get('/forgot',function(req,res){
-    res.sendFile('forgot.html',{'root': __dirname + '/temp'});
+    res.sendFile('forgot.html',{'root': __dirname });
 });
 
 
@@ -111,7 +112,7 @@ sess=req.session;
     if(sess.username)      
     {   
         //res.render('lg.html');  
-        res.sendFile('home.html',{'root': __dirname + '/temp'});
+        res.sendFile('icon.html',{'root': __dirname });
         res.write('<h1>Hello '+sess.username+'</h1><br>');  
         res.end('<a href='+'/logout'+'>Logout</a>');  
     }  

@@ -1,0 +1,134 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'app/server.js' ]
+2 info using npm@3.10.10
+3 info using node@v6.9.4
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData app/server.js
+8 silly fetchOtherPackageData app/server.js
+9 silly cache add args [ 'app/server.js', null ]
+10 verbose cache add spec app/server.js
+11 silly cache add parsed spec Result {
+11 silly cache add   raw: 'app/server.js',
+11 silly cache add   scope: null,
+11 silly cache add   escapedName: null,
+11 silly cache add   name: null,
+11 silly cache add   rawSpec: 'app/server.js',
+11 silly cache add   spec: 'github:app/server.js',
+11 silly cache add   type: 'hosted',
+11 silly cache add   hosted:
+11 silly cache add    { type: 'github',
+11 silly cache add      ssh: 'git@github.com:app/server.js.git',
+11 silly cache add      sshUrl: 'git+ssh://git@github.com/app/server.js.git',
+11 silly cache add      httpsUrl: 'git+https://github.com/app/server.js.git',
+11 silly cache add      gitUrl: 'git://github.com/app/server.js.git',
+11 silly cache add      shortcut: 'github:app/server.js',
+11 silly cache add      directUrl: 'https://raw.githubusercontent.com/app/server.js/master/package.json' } }
+12 verbose addRemoteGit caching app/server.js
+13 verbose addRemoteGit app/server.js is a repository hosted by github
+14 silly tryGitProto attempting to clone git://github.com/app/server.js.git
+15 silly tryClone cloning app/server.js via git://github.com/app/server.js.git
+16 verbose tryClone git-github-com-app-server-js-git-56d1035d not in flight; caching
+17 verbose correctMkdir /Users/sathiyaanbu/.npm/_git-remotes correctMkdir not in flight; initializing
+18 info git [ 'clone',
+18 info git   '--template=/Users/sathiyaanbu/.npm/_git-remotes/_templates',
+18 info git   '--mirror',
+18 info git   'git://github.com/app/server.js.git',
+18 info git   '/Users/sathiyaanbu/.npm/_git-remotes/git-github-com-app-server-js-git-56d1035d' ]
+19 verbose git clone --template=/Users/sathiyaanbu/.npm/_git-remotes/_templates --mirror git://github.com/app/server.js.git /Users/sathiyaanbu/.npm/_git-remotes/git-github-com-app-server-js-git-56d1035d: Cloning into bare repository '/Users/sathiyaanbu/.npm/_git-remotes/git-github-com-app-server-js-git-56d1035d'...
+19 verbose git clone --template=/Users/sathiyaanbu/.npm/_git-remotes/_templates --mirror git://github.com/app/server.js.git /Users/sathiyaanbu/.npm/_git-remotes/git-github-com-app-server-js-git-56d1035d: fatal: remote error:
+19 verbose git clone --template=/Users/sathiyaanbu/.npm/_git-remotes/_templates --mirror git://github.com/app/server.js.git /Users/sathiyaanbu/.npm/_git-remotes/git-github-com-app-server-js-git-56d1035d:   Repository not found.
+20 silly tryHTTPS attempting to clone git+https://github.com/app/server.js.git
+21 silly tryClone cloning app/server.js via git+https://github.com/app/server.js.git
+22 verbose tryClone git-https-github-com-app-server-js-git-8eead0a9 not in flight; caching
+23 verbose correctMkdir /Users/sathiyaanbu/.npm/_git-remotes correctMkdir not in flight; initializing
+24 info git [ 'clone',
+24 info git   '--template=/Users/sathiyaanbu/.npm/_git-remotes/_templates',
+24 info git   '--mirror',
+24 info git   'https://github.com/app/server.js.git',
+24 info git   '/Users/sathiyaanbu/.npm/_git-remotes/git-https-github-com-app-server-js-git-8eead0a9' ]
+25 verbose git clone --template=/Users/sathiyaanbu/.npm/_git-remotes/_templates --mirror https://github.com/app/server.js.git /Users/sathiyaanbu/.npm/_git-remotes/git-https-github-com-app-server-js-git-8eead0a9: Cloning into bare repository '/Users/sathiyaanbu/.npm/_git-remotes/git-https-github-com-app-server-js-git-8eead0a9'...
+25 verbose git clone --template=/Users/sathiyaanbu/.npm/_git-remotes/_templates --mirror https://github.com/app/server.js.git /Users/sathiyaanbu/.npm/_git-remotes/git-https-github-com-app-server-js-git-8eead0a9: remote: Repository not found.
+25 verbose git clone --template=/Users/sathiyaanbu/.npm/_git-remotes/_templates --mirror https://github.com/app/server.js.git /Users/sathiyaanbu/.npm/_git-remotes/git-https-github-com-app-server-js-git-8eead0a9: fatal: repository 'https://github.com/app/server.js.git/' not found
+26 silly trySSH attempting to clone git@github.com:app/server.js.git
+27 silly tryClone cloning app/server.js via git@github.com:app/server.js.git
+28 verbose tryClone git-github-com-app-server-js-git-97473238 not in flight; caching
+29 verbose correctMkdir /Users/sathiyaanbu/.npm/_git-remotes correctMkdir not in flight; initializing
+30 info git [ 'clone',
+30 info git   '--template=/Users/sathiyaanbu/.npm/_git-remotes/_templates',
+30 info git   '--mirror',
+30 info git   'git@github.com:app/server.js.git',
+30 info git   '/Users/sathiyaanbu/.npm/_git-remotes/git-github-com-app-server-js-git-97473238' ]
+31 error git clone --template=/Users/sathiyaanbu/.npm/_git-remotes/_templates --mirror git@github.com:app/server.js.git /Users/sathiyaanbu/.npm/_git-remotes/git-github-com-app-server-js-git-97473238: Cloning into bare repository '/Users/sathiyaanbu/.npm/_git-remotes/git-github-com-app-server-js-git-97473238'...
+31 error git clone --template=/Users/sathiyaanbu/.npm/_git-remotes/_templates --mirror git@github.com:app/server.js.git /Users/sathiyaanbu/.npm/_git-remotes/git-github-com-app-server-js-git-97473238: Permission denied (publickey).
+31 error git clone --template=/Users/sathiyaanbu/.npm/_git-remotes/_templates --mirror git@github.com:app/server.js.git /Users/sathiyaanbu/.npm/_git-remotes/git-github-com-app-server-js-git-97473238: fatal: Could not read from remote repository.
+31 error git clone --template=/Users/sathiyaanbu/.npm/_git-remotes/_templates --mirror git@github.com:app/server.js.git /Users/sathiyaanbu/.npm/_git-remotes/git-github-com-app-server-js-git-97473238:
+31 error git clone --template=/Users/sathiyaanbu/.npm/_git-remotes/_templates --mirror git@github.com:app/server.js.git /Users/sathiyaanbu/.npm/_git-remotes/git-github-com-app-server-js-git-97473238: Please make sure you have the correct access rights
+31 error git clone --template=/Users/sathiyaanbu/.npm/_git-remotes/_templates --mirror git@github.com:app/server.js.git /Users/sathiyaanbu/.npm/_git-remotes/git-github-com-app-server-js-git-97473238: and the repository exists.
+32 silly fetchPackageMetaData Error: Command failed: git clone --template=/Users/sathiyaanbu/.npm/_git-remotes/_templates --mirror git@github.com:app/server.js.git /Users/sathiyaanbu/.npm/_git-remotes/git-github-com-app-server-js-git-97473238
+32 silly fetchPackageMetaData Cloning into bare repository '/Users/sathiyaanbu/.npm/_git-remotes/git-github-com-app-server-js-git-97473238'...
+32 silly fetchPackageMetaData Permission denied (publickey).
+32 silly fetchPackageMetaData fatal: Could not read from remote repository.
+32 silly fetchPackageMetaData
+32 silly fetchPackageMetaData Please make sure you have the correct access rights
+32 silly fetchPackageMetaData and the repository exists.
+32 silly fetchPackageMetaData
+32 silly fetchPackageMetaData     at ChildProcess.exithandler (child_process.js:206:12)
+32 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+32 silly fetchPackageMetaData     at ChildProcess.emit (events.js:191:7)
+32 silly fetchPackageMetaData     at maybeClose (internal/child_process.js:877:16)
+32 silly fetchPackageMetaData     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
+32 silly fetchPackageMetaData  error for app/server.js { Error: Command failed: git clone --template=/Users/sathiyaanbu/.npm/_git-remotes/_templates --mirror git@github.com:app/server.js.git /Users/sathiyaanbu/.npm/_git-remotes/git-github-com-app-server-js-git-97473238
+32 silly fetchPackageMetaData Cloning into bare repository '/Users/sathiyaanbu/.npm/_git-remotes/git-github-com-app-server-js-git-97473238'...
+32 silly fetchPackageMetaData Permission denied (publickey).
+32 silly fetchPackageMetaData fatal: Could not read from remote repository.
+32 silly fetchPackageMetaData
+32 silly fetchPackageMetaData Please make sure you have the correct access rights
+32 silly fetchPackageMetaData and the repository exists.
+32 silly fetchPackageMetaData
+32 silly fetchPackageMetaData     at ChildProcess.exithandler (child_process.js:206:12)
+32 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+32 silly fetchPackageMetaData     at ChildProcess.emit (events.js:191:7)
+32 silly fetchPackageMetaData     at maybeClose (internal/child_process.js:877:16)
+32 silly fetchPackageMetaData     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
+32 silly fetchPackageMetaData   killed: false,
+32 silly fetchPackageMetaData   code: 128,
+32 silly fetchPackageMetaData   signal: null,
+32 silly fetchPackageMetaData   cmd: 'git clone --template=/Users/sathiyaanbu/.npm/_git-remotes/_templates --mirror git@github.com:app/server.js.git /Users/sathiyaanbu/.npm/_git-remotes/git-github-com-app-server-js-git-97473238' }
+33 silly rollbackFailedOptional Starting
+34 silly rollbackFailedOptional Finishing
+35 silly runTopLevelLifecycles Finishing
+36 silly install printInstalled
+37 verbose stack Error: Command failed: git clone --template=/Users/sathiyaanbu/.npm/_git-remotes/_templates --mirror git@github.com:app/server.js.git /Users/sathiyaanbu/.npm/_git-remotes/git-github-com-app-server-js-git-97473238
+37 verbose stack Cloning into bare repository '/Users/sathiyaanbu/.npm/_git-remotes/git-github-com-app-server-js-git-97473238'...
+37 verbose stack Permission denied (publickey).
+37 verbose stack fatal: Could not read from remote repository.
+37 verbose stack
+37 verbose stack Please make sure you have the correct access rights
+37 verbose stack and the repository exists.
+37 verbose stack
+37 verbose stack     at ChildProcess.exithandler (child_process.js:206:12)
+37 verbose stack     at emitTwo (events.js:106:13)
+37 verbose stack     at ChildProcess.emit (events.js:191:7)
+37 verbose stack     at maybeClose (internal/child_process.js:877:16)
+37 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
+38 verbose cwd /Users/sathiyaanbu/how-to-be-a-Finn/www
+39 error Darwin 16.5.0
+40 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "app/server.js"
+41 error node v6.9.4
+42 error npm  v3.10.10
+43 error code 128
+44 error Command failed: git clone --template=/Users/sathiyaanbu/.npm/_git-remotes/_templates --mirror git@github.com:app/server.js.git /Users/sathiyaanbu/.npm/_git-remotes/git-github-com-app-server-js-git-97473238
+44 error Cloning into bare repository '/Users/sathiyaanbu/.npm/_git-remotes/git-github-com-app-server-js-git-97473238'...
+44 error Permission denied (publickey).
+44 error fatal: Could not read from remote repository.
+44 error
+44 error Please make sure you have the correct access rights
+44 error and the repository exists.
+45 error If you need help, you may report this error at:
+45 error     <https://github.com/npm/npm/issues>
+46 verbose exit [ 1, true ]
