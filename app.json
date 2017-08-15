@@ -1,0 +1,8 @@
+{
+  "name": "Start on Heroku: Node.js",
+  "description": "Howtobeafinn game app",
+  "repository": "https://github.com/sathiyaanbu/how-to-be-a-Finn.git",
+  "logo": "www/public/res/icon",
+  "keywords": ["node", "express", "heroku"],
+  "image": "heroku/nodejs"
+}
