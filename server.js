@@ -1,11 +1,24 @@
 var express = require('express');
 var app = express();
 
+
+
+// var mysql = require('mysql');
+// var async = require('async');
+// var crypto = require('crypto');
+var fs = require('fs');
+
 //app.set('port', (process.env.PORT || 5000));
 
 app.use(express.static(__dirname + 'www/public'));
+app.use('/node_modules',  express.static(__dirname + '/node_modules'));
 
-// views is directory for all template files
+app.use('/css', express.static(__dirname + '/www/public/css'));
+ app.use('/img',  express.static(__dirname + '/www/public/img'));
+
+ app.use('/js',  express.static(__dirname + '/www/public/js'));
+
+// views is directory for all template files¨
 app.set('views', __dirname + '/www/views');
  //app.set('view engine', 'ejs');
 
@@ -80,12 +93,7 @@ app.listen(process.env.PORT || 5500, function(){
 //   else
 //     console.log('Error while performing Query.');
 // });
-// app.use('/node_modules',  express.static(__dirname + '/node_modules'));
 
-// app.use('/css',  express.static(__dirname + '/css'));
-// app.use('/img',  express.static(__dirname + '/img'));
-
-// app.use('/js',  express.static(__dirname + '/js'));
 
 // app.use(session({secret: 'ssshhhhh',saveUninitialized: true,resave: true}));
 
