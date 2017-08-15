@@ -1,21 +1,25 @@
 var express = require('express');
 var app = express();
 
-app.set('port', (process.env.PORT || 5000));
+//app.set('port', (process.env.PORT || 5000));
 
 app.use(express.static(__dirname + 'www/public'));
 
 // views is directory for all template files
-app.set('views', __dirname + 'www/views');
-// app.set('view engine', 'html');
+app.set('views', __dirname + '/www/views');
+ //app.set('view engine', 'ejs');
 
 app.get('/', function(request, response) {
-  response.render('/index.html');
+  response.sendFile('index.html',{'root': __dirname + '/www/views'});
 });
 
-app.listen(app.get('port'), function() {
-  console.log('Node app is running on port', app.get('port'));
-});
+
+
+app.listen(process.env.PORT || 5500, function(){
+  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+ });
+
+
 // var express = require('express');
 // var nodemailer = require('nodemailer');
 // var app = express();
