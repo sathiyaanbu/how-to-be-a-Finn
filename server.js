@@ -15,7 +15,7 @@ app.use('/node_modules',  express.static(__dirname + '/node_modules'));
 
 app.use('/css', express.static(__dirname + '/www/public/css'));
  app.use('/img',  express.static(__dirname + '/www/public/img'));
-
+ app.use('/views',  express.static(__dirname + '/www/views'));
  app.use('/js',  express.static(__dirname + '/www/public/js'));
 
 // views is directory for all template files¨
@@ -24,6 +24,7 @@ app.set('views', __dirname + '/www/views');
 
 app.get('/', function(request, response) {
   response.sendFile('index.html',{'root': __dirname + '/www/views'});
+
 });
 
 
