@@ -361,43 +361,43 @@ margin:40px 5px 5px 0px;
     left:30%;
 	position:relative;
 	width:40%;
-	height:90px;
+	height:85px;
 }  
  #everydaykit01 {
    cursor: pointer;
    left:20%;
    position:relative;
-   width:50%;
-   height:50px;
+   width:60%;
+   height:48px;
 
    } 
 #gtk_01 {
     cursor: pointer;
-    left:47%;
+    left:40%;
    position:relative;
-   width:35%;
-   height:70px;
+   width:48%;
+   height:65px;
 } 
 #food_01 {
 	cursor: pointer;
-left:27%;
+left:22%;
    position:relative;
-   width:90px;
-   height:100px;"
+   width:30%;
+   height:80px;"
 } 
 #com_01 {
     cursor: pointer;
     left:15%;
    position:relative;
-    width:200px;
-	height:65px;
+    width:150px;
+	height:60px;
    } 
 #mov_01 {
    cursor: pointer;
     left:32%;
    position:relative;
-    width:190px;
-	height:100px;"
+    width:150px;
+	height:80px;"
    }
 #out_01 {
     left:20%;
@@ -479,12 +479,12 @@ left:27%;
 #quiz_01{
   border-style: solid;
  height: 35px;
- width: 100%;
+ /*width: 100%;*/
   border-radius: 5px;
   font-size: 10px;
    font-weight: normal;               
   color: #ffffff;
-  margin-left:2px;
+  /*margin-left:2px;*/
   background-color: #2aaced;
   border-color: #bfc1ba;
   text-align: center;
