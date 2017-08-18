@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-
+var http = require('http');
 
 
 // var mysql = require('mysql');
@@ -17,7 +17,7 @@ app.use('/css', express.static(__dirname + '/www/public/css'));
  app.use('/img',  express.static(__dirname + '/www/public/img'));
  app.use('/views',  express.static(__dirname + '/www/views'));
  app.use('/js',  express.static(__dirname + '/www/public/js'));
-
+ app.use('/',  express.static(__dirname + '/www/views'));
 // views is directory for all template files¨
 app.set('views', __dirname + '/www/views');
  //app.set('view engine', 'ejs');
